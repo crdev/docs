@@ -357,7 +357,7 @@ Alternatively, you can use the `dockerd --ip` flag when starting the daemon.
 
 On Linux, Docker needs "IP Forwarding" enabled on the host. So, it enables
 the `sysctl` settings `net.ipv4.ip_forward` and `net.ipv6.conf.all.forwarding`
-it they are not already enabled when it starts. When it does that, it also
+if they are not already enabled when it starts. When it does that, it also
 sets the policy of the iptables `FORWARD` chain to `DROP`.
 
 If Docker sets the policy for the `FORWARD` chain to `DROP`. This will prevent
